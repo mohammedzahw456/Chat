@@ -7,6 +7,7 @@ com\example\chat\controllers\SignUpController.class
 com\example\chat\security\SecurityConfig$1.class
 com\example\chat\repositories\RoleRepository.class
 com\example\chat\repositories\TextMessageRepository.class
+com\example\chat\controllers\HomeController.class
 com\example\chat\services\SignUpService.class
 com\example\chat\models\MessageStatus.class
 com\example\chat\services\ChatService.class

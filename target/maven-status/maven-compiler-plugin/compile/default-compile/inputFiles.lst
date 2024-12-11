@@ -3,6 +3,7 @@ D:\GitHub\Chat\src\main\java\com\example\chat\config\JacksonConfig.java
 D:\GitHub\Chat\src\main\java\com\example\chat\config\WebSocketConfig.java
 D:\GitHub\Chat\src\main\java\com\example\chat\config\WebSocketHandler.java
 D:\GitHub\Chat\src\main\java\com\example\chat\controllers\ChatController.java
+D:\GitHub\Chat\src\main\java\com\example\chat\controllers\HomeController.java
 D:\GitHub\Chat\src\main\java\com\example\chat\controllers\LocalUserController.java
 D:\GitHub\Chat\src\main\java\com\example\chat\controllers\LoginController.java
 D:\GitHub\Chat\src\main\java\com\example\chat\controllers\SignUpController.java

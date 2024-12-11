@@ -1,15 +1,13 @@
 {
-  "install": "sudo apt-get update && sudo apt-get install -y openjdk-21-jdk && sudo apt-get install -y maven",
-  "compile": " echo \"Compiling the application\" && mvn clean package",
   "start": "java -jar target/*.jar",
-  "setup": "npm run install-java && npm run install-maven && npm run compile && npm run start",
+  "install": "echo 'Compiling Spring Boot application...' && mvn clean install",
   "watch": {
     "throttle": 500,
     "install": {
       "include": ["^pom\\.xml$", "\\.java$"]
     },
     "run": {
-      "command": "java -jar target/*.jar"
+      "command": "mvn spring-boot:run"
     }
   }
 }

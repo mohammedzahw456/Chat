@@ -2,6 +2,7 @@ package com.example.chat.services;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.http.HttpStatus;
@@ -63,7 +64,9 @@ public class SignUpService {
 
                 roleService.saveRole(role);
             }
-            user.setRoles(List.of(role));
+            List<Role> roles = new ArrayList<>();
+            roles.add(role);
+            user.setRoles(roles);
             if (request.getImage() != null)
                 user = imageService.uploadImage(request.getImage(), user);
 

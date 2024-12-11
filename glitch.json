@@ -1,10 +1,15 @@
 {
-  "start": " java -jar target/*.jar",
-  "install": "echo 'compiling' && mvn package",
+  "install": "sudo apt-get update && sudo apt-get install -y openjdk-21-jdk && sudo apt-get install -y maven",
+  "compile": " echo \"Compiling the application\" && mvn clean package",
+  "start": "java -jar target/*.jar",
+  "setup": "npm run install-java && npm run install-maven && npm run compile && npm run start",
   "watch": {
     "throttle": 500,
     "install": {
       "include": ["^pom\\.xml$", "\\.java$"]
+    },
+    "run": {
+      "command": "java -jar target/*.jar"
     }
   }
 }

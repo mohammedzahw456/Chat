@@ -117,7 +117,7 @@ public class ChatService {
         List<TextMessage> textMessages = textMessageRepository.getMessagesByChatId(chatId);
         if (textMessages.isEmpty())
             return null;
-        return textMessageMapper.toDto(textMessages.getLast(), chatId);
+        return textMessageMapper.toDto(textMessages.get(textMessages.size() - 1), chatId);
     }
 
     /**************************************************************************************** */

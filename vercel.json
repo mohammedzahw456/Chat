@@ -1,6 +1,0 @@
-{
-  "builds": {
-    "extends": "@vercel/java"
-  },
-  "jdk": "17"
-}
